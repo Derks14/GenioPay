@@ -1,5 +1,4 @@
 
-const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
@@ -7,7 +6,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    fontfamily: ['"Nunito Sans"', 'sans-serif']
   },
   plugins: [],
 }

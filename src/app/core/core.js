@@ -1,7 +1,7 @@
 const Core = () => {
   return (
     <div>
-      <p>Core</p>
+      <p>Almost before we knew it, we had left the ground.</p>
     </div>
   )
 }
