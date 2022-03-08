@@ -6,7 +6,7 @@ const Nav = () => {
     <nav className="px-8">
       <div className="flex items-center pt-6 pb-2">
         <div className="mr-auto">
-          <p className="text-3xl">Welcome, {name}</p>
+          <p className="text-3xl font-bold">Welcome, {name}</p>
         </div>
 
         <div>
@@ -18,7 +18,7 @@ const Nav = () => {
 <path d="M14.6666 14.6666L13.3333 13.3333" stroke="#55676B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
             </span>
-            <input placeholder="Search" className="border py-4 px-12 rounded-2xl  border-[#AAC0C5] focus:outline-none" />
+            <input placeholder="Search" className="border py-4 bg-[#F8FCFC] px-12 rounded-2xl  border-[#AAC0C5] focus:outline-none" />
           </label>
         </div>
 
