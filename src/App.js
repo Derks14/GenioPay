@@ -3,7 +3,7 @@ import Core from "./app/core/core";
 
 const App = () => {
   return (
-      <div className="box-border p-0 m-0 w-full leading-7">
+      <div className="box-border p-0 m-0 min-w-[1440px] h-[1024px] leading-7">
         <BrowserRouter>
           <Core/>
         </BrowserRouter>
