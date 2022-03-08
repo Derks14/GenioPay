@@ -3,7 +3,7 @@ import { useState } from "react";
 const Nav = () => {
   const [name, setName] = useState('Huss Smith')
   return (
-    <nav className="px-8">
+    <nav className="px-8 bg-white">
       <div className="flex items-center pt-6 pb-2">
         <div className="mr-auto">
           <p className="text-3xl font-bold">Welcome, {name}</p>

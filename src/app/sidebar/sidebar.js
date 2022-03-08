@@ -279,8 +279,8 @@ const Sidebar = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-center w-full mt-4">
-              <button className="w-full text-white text-base rounded-lg font-bold bg-[#017189]  py-4">
+            <div className="flex  items-center justify-center w-full mt-4">
+              <button className="w-full hover:bg-[#2B899D] text-white text-base rounded-lg font-bold bg-[#017189]  py-4">
                 Invite Friends
               </button>
             </div>
