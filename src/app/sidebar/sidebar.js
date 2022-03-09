@@ -4,6 +4,7 @@ import Search from "../components/search";
 const Sidebar = () => {
 
   const { pathname } = useLocation();
+  console.log(pathname);
   // useEffect(() => {}, [pathname]);
   return (
     <aside className="bg-[#017189] h-screen md:h-full">
@@ -98,7 +99,7 @@ const Sidebar = () => {
         <div>
           <ul className="mt-8">
             <li>
-              {pathname.includes("/dashboard") && <NavLink to="/dashboard"
+              {pathname.includes("/dashboard")  && <NavLink to="/dashboard"
                        className="flex items-center text-[#017189] w-full bg-white px-6 py-4 rounded-lg font-bold my-2">
                 <span className="mr-4">
                   <svg width="24" height="25" className=" text-[#017189]" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +114,7 @@ const Sidebar = () => {
                 Dashboard
               </NavLink>}
 
-              { !pathname.includes("/dashboard") && <NavLink to="/dashboard" className="flex items-center font-bold text-sm my-2 text-white py-4 px-6">
+              { !pathname.includes("/dashboard") && <NavLink to="/dashboard" className="flex items-center hover:text-[#017189] hover:w-full hover:bg-white hover:rounded-lg font-bold text-sm my-2 text-white py-4 px-6">
                 <span className="mr-4">
                   <svg width="16" height="17" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M22 8.56096V4.02095C22 2.61095 21.36 2.04095 19.77 2.04095H15.73C14.14 2.04095 13.5 2.61095 13.5 4.02095V8.55095C13.5 9.97095 14.14 10.531 15.73 10.531H19.77C21.36 10.541 22 9.97096 22 8.56096Z" fill="white"/>
@@ -129,7 +130,7 @@ const Sidebar = () => {
             </li>
             <li>
               {pathname.includes("/wallet") && <NavLink to="/wallet"
-                       className="flex items-center text-[#017189] w-full bg-white px-6 shadow-sm py-4 my-2 rounded-lg font-bold ">
+                       className="flex items-center text-[#017189] w-full bg-white px-6 shadow-sm py-4 my-2 rounded-lg font-bold hover:text-[#017189] hover:w-full hover:bg-white hover:rounded-lg">
                 <span className="mr-4">
 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22 11.011V13.071C22 13.621 21.56 14.071 21 14.091H19.04C17.96 14.091 16.97 13.301 16.88 12.221C16.82 11.591 17.06 11.001 17.48 10.591C17.85 10.211 18.36 9.99095 18.92 9.99095H21C21.56 10.011 22 10.461 22 11.011Z" fill="#017189"/>
@@ -155,7 +156,7 @@ const Sidebar = () => {
             </li>
             <li>
               {pathname.includes("/cards") && <NavLink to="/cards"
-                       className="flex items-center text-[#017189] w-full bg-white px-6 py-4 rounded-lg my-2 font-bold ">
+                       className="flex items-center text-[#017189] w-full bg-white px-6 py-4 rounded-lg my-2 font-bold hover:text-[#017189] hover:w-full hover:bg-white hover:rounded-lg">
                 <span className="mr-4">
                   <svg  viewBox="0 0 16 17" fill="none" width="24" height="25" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.33333 6.21092H14.6667" stroke="#017189" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
@@ -168,7 +169,7 @@ const Sidebar = () => {
                 Cards
               </NavLink>}
 
-              { !pathname.includes("/cards") && <NavLink to="/cards" className="flex items-center font-bold text-sm text-white my-2 py-4 px-6">
+              { !pathname.includes("/cards") && <NavLink to="/cards" className="flex items-center font-bold text-sm text-white my-2 py-4 px-6 hover:text-[#017189] hover:w-full hover:bg-white hover:rounded-lg">
                 <span className="mr-4">
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.33333 6.21092H14.6667" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
@@ -198,7 +199,7 @@ const Sidebar = () => {
                 FX Centre
               </NavLink>}
 
-              { !pathname.includes("/fx-center") && <NavLink to="/fx-center" className="flex items-center font-bold text-sm text-white my-2 py-4 px-6">
+              { !pathname.includes("/fx-center") && <NavLink to="/fx-center" className="flex items-center font-bold text-sm text-white my-2 py-4 px-6 hover:text-[#017189] hover:w-full hover:bg-white hover:rounded-lg">
                 <span className="mr-4">
                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.78125 10.0942C5.78125 10.9542 6.44125 11.6475 7.26125 11.6475H8.93458C9.64792 11.6475 10.2279 11.0408 10.2279 10.2942C10.2279 9.48085 9.87458 9.19418 9.34792 9.00751L6.66125 8.07418C6.13458 7.88751 5.78125 7.60085 5.78125 6.78751C5.78125 6.04085 6.36125 5.43418 7.07458 5.43418H8.74792C9.56792 5.43418 10.2279 6.12751 10.2279 6.98751" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -229,10 +230,10 @@ const Sidebar = () => {
               { !pathname.includes("/beneficiaries") && <NavLink to="/beneficiaries" className="flex items-center font-bold text-sm text-white my-2 py-4 px-6">
                 <span className="mr-4">
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.10667 7.78762C6.04 7.78095 5.96 7.78095 5.88667 7.78762C4.3 7.73429 3.04 6.43429 3.04 4.83429C3.04 3.20095 4.36 1.87429 6 1.87429C7.63333 1.87429 8.96 3.20095 8.96 4.83429C8.95333 6.43429 7.69333 7.73429 6.10667 7.78762Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.94 3.20762C12.2333 3.20762 13.2733 4.25429 13.2733 5.54096C13.2733 6.80096 12.2733 7.82762 11.0267 7.87429C10.9733 7.86762 10.9133 7.86762 10.8533 7.87429" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.77333 10.2476C1.16 11.3276 1.16 13.0876 2.77333 14.161C4.60666 15.3876 7.61333 15.3876 9.44666 14.161C11.06 13.081 11.06 11.321 9.44666 10.2476C7.62 9.02762 4.61333 9.02762 2.77333 10.2476Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.2267 13.8743C12.7067 13.7743 13.16 13.581 13.5333 13.2943C14.5733 12.5143 14.5733 11.2276 13.5333 10.4476C13.1667 10.1676 12.72 9.98095 12.2467 9.87429" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.10667 7.78762C6.04 7.78095 5.96 7.78095 5.88667 7.78762C4.3 7.73429 3.04 6.43429 3.04 4.83429C3.04 3.20095 4.36 1.87429 6 1.87429C7.63333 1.87429 8.96 3.20095 8.96 4.83429C8.95333 6.43429 7.69333 7.73429 6.10667 7.78762Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.94 3.20762C12.2333 3.20762 13.2733 4.25429 13.2733 5.54096C13.2733 6.80096 12.2733 7.82762 11.0267 7.87429C10.9733 7.86762 10.9133 7.86762 10.8533 7.87429" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2.77333 10.2476C1.16 11.3276 1.16 13.0876 2.77333 14.161C4.60666 15.3876 7.61333 15.3876 9.44666 14.161C11.06 13.081 11.06 11.321 9.44666 10.2476C7.62 9.02762 4.61333 9.02762 2.77333 10.2476Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.2267 13.8743C12.7067 13.7743 13.16 13.581 13.5333 13.2943C14.5733 12.5143 14.5733 11.2276 13.5333 10.4476C13.1667 10.1676 12.72 9.98095 12.2467 9.87429" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
                 </span>
@@ -273,7 +274,7 @@ const Sidebar = () => {
 
 
       {/*  invite friends*/}
-        <div className="mt-8">
+        <div className=" mt-2 md:mt-4">
           <div className="bg-[#FFF5E9] rounded-lg py-6 px-8">
             <div className="flex justify-between">
               <div className="mr-4">

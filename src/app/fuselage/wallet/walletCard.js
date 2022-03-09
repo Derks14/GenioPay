@@ -1,5 +1,6 @@
 import Search from "../../components/search";
-import { NavLink } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
+import ActiveWallet from "./activeWallet";
 
 const WalletCard = () => {
   return (
@@ -22,7 +23,7 @@ const WalletCard = () => {
       <div className="my-5">
         <div className="grid grid-cols-3">
           <div className="text-center hover:border-b-4 focus:border-b-4 my-2 pb-1 hover:border-[#017189] focus:border-[#017189]">
-            <a>Active (3)</a>
+            <NavLink to="/active">Active (3)</NavLink>
           </div>
           <div className="text-center hover:border-b-4 focus:border-b-4 my-2 pb-1 hover:border-[#017189] focus:border-[#017189]">
             <a>Inactive  (2)</a>
@@ -36,56 +37,7 @@ const WalletCard = () => {
       </div>
 
       <div>
-        <div>
-          <ul>
-            <li className="my-4">
-              <div className="flex items-center py-3 hover:bg-[#EEF7F9]  focus:bg-[#EEF7F9] rounded-md px-4">
-                <div className="mr-4">
-                  <img width="52" height="52" className="rounded-full" src="https://i.ibb.co/XYXDcWn/flags.png"/>
-                </div>
-                <div className="mr-auto">
-                  <p className="text-[#001B21]">EUR Wallet</p>
-                  <p className="text-sm">EUR</p>
-                </div>
-                <div className="text-right">
-                  <p className="font-bold">€2,000,000.50</p>
-                  <p className="text-sm">Default</p>
-                </div>
-              </div>
-            </li>
-            <li className="my-4">
-              <div className="flex items-center py-3 hover:bg-[#EEF7F9]  focus:bg-[#EEF7F9] rounded-md px-4">
-                <div className="mr-4">
-                  <img width="52" height="52" className="rounded-full" src="https://i.ibb.co/hD4WtCM/Mask-Group.png"/>
-                </div>
-                <div className="mr-auto">
-                  <p className="text-[#001B21]">Personal Account</p>
-                  <p className="text-sm">USD</p>
-
-                </div>
-                <div className="text-right">
-                  <p className="font-bold">$10,000.00</p>
-                </div>
-              </div>
-            </li>
-
-            <li className="my-4">
-              <div className="flex items-center py-2 hover:bg-[#EEF7F9]  focus:bg-[#EEF7F9] rounded-md px-4">
-                <div className="mr-4">
-                  <img width="52" height="52" className="rounded-full" src="https://i.ibb.co/KK4Rb5y/flags-1.png"/>
-                </div>
-                <div className="mr-auto">
-                  <p className="text-[#001B21]">School Savings</p>
-                  <p className="text-sm">GBP</p>
-
-                </div>
-                <div className="text-right">
-                  <p className="font-bold">£500.00</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <ActiveWallet/>
       </div>
 
     </div>
