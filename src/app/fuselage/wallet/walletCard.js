@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const WalletCard = () => {
   return (
-    <div className="bg-white rounded-2xl py-2 px-4 ">
+    <div className="bg-white rounded-2xl py-2 px-6 md:px-4 my-8 lg:my-0">
       <div className="flex items-center justify-between">
         <div>
           <Search/>

@@ -2,7 +2,7 @@ import Activity from "./activity";
 
 const Dashboard = () => {
   return (
-    <div className="px-8 my-6 py-6 bg-white rounded-2xl">
+    <div className="px-4 md:px-8 my-6 py-6 bg-white rounded-2xl">
 
       {/*dashboard data*/}
       <div className="">
@@ -12,8 +12,8 @@ const Dashboard = () => {
         </div>
 
         <div className="my-8">
-          <div className="flex items-center">
-            <div className="mr-8 bg-[#FFF6E6] shadow-sm border border-slate-100 w-[332px] rounded-2xl p-6">
+          <div className="flex items-center overflow-auto">
+            <div className="md:mr-8 mr-2 bg-[#FFF6E6] shadow-sm border border-slate-100 w-[332px] rounded-2xl p-6">
               <div className="flex justify-between">
                 <div><p>Personal Account</p>
                   <p className="text-sm">USD</p></div>
@@ -27,7 +27,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div>
-              <button className="rounded-full w-14 h-14 border border-[#017189] hover:bg-[#edf7f7] hover:text-white
+              <button className="rounded-full w-6 h-6 md:w-14 md:h-14 border border-[#017189] hover:bg-[#edf7f7] hover:text-white
                flex items-center justify-center">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 16H24" stroke="#017189" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -44,8 +44,8 @@ const Dashboard = () => {
         </div>
 
         <div className="my-8">
-          <div className="flex  items-center">
-            <div className="w-32 mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
+          <div className="flex overflow-auto  items-center">
+            <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
               <div className="px-auto text-center flex items-center justify-center	">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#F97316"/>
@@ -57,7 +57,7 @@ const Dashboard = () => {
 
             </div>
 
-            <div className="w-32 mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
+            <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
               <div className="px-auto text-center flex items-center justify-center	">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#005061"/>
@@ -71,7 +71,7 @@ const Dashboard = () => {
             </div>
 
 
-            <div className="w-32 mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
+            <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
               <div className="px-auto text-center flex items-center justify-center	">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#F59E0B"/>
@@ -84,7 +84,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Balance Exchange</p></div>
 
             </div>
-            <div className="w-32 mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
+            <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
               <div className="px-auto text-center flex items-center justify-center	">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#5EEAD4"/>
@@ -95,7 +95,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Transfer to Account</p></div>
 
             </div>
-            <div className="w-32 mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
+            <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
               <div className="px-auto text-center flex items-center justify-center	">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#9333EA"/>
@@ -108,7 +108,7 @@ const Dashboard = () => {
 
             </div>
 
-            <div className="w-32 mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] hover:shadow-md border-[#F1F5F9] ">
+            <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] hover:shadow-md border-[#F1F5F9] ">
               <div className="px-auto text-center flex items-center justify-center	">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#FFCB00"/>
@@ -119,7 +119,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Mobile Money</p></div>
 
             </div>
-            <div className="w-32 mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] hover:shadow-md border-[#F1F5F9] ">
+            <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] hover:shadow-md border-[#F1F5F9] ">
               <div className="px-auto text-center flex items-center justify-center	">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#F43F5E"/>

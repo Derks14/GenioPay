@@ -1,13 +1,13 @@
 const WalletDetail = () => {
   return (
-    <div className="bg-white rounded-2xl py-4 px-12 ">
+    <div className="bg-white rounded-2xl py-4 px-4 md:px-12 ">
       <div>
 
 
         <div>
           <div className="rounded-2xl border border-gray-100 p-8 shadow-sm">
-            <div className="flex justify-between items-center">
-              <div>
+            <div className="md:flex justify-between items-center">
+              <div className="flex items-center justify-between">
                 <p className="text-green-500 text-xs flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Active</p>
                 <p className="text-[#001B21]">EUR Wallet</p>
@@ -24,7 +24,7 @@ const WalletDetail = () => {
         </div>
 
         <div>
-          <div className="grid grid-cols-2 w-full gap-8   my-4">
+          <div className="md:grid md:grid-cols-2 w-full gap-8   my-4">
             {/*balance*/}
             <div className="col-span-1">
               <div className="my-2 flex items-center">
@@ -54,9 +54,9 @@ const WalletDetail = () => {
         </div>
 
         <div>
-          <div className="grid grid-cols-3 gap-5  my-8">
+          <div className="grid grid-cols-3 gap-1 md:gap-5  my-8">
             <div className="col-span-1">
-              <button className="border flex hover:shadow-lg items-center hover:bg-[#017189] hover:text-white justify-center w-full py-3 text-[#017189] border-[#017189] rounded-2xl">
+              <button className="border w-full text-sm md:text-base flex hover:shadow-lg items-center hover:bg-[#017189] hover:text-white justify-center w-full py-3 text-[#017189] border-[#017189] rounded-2xl">
                 <svg width="16" height="16" className="mr-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.93337 4.21333L10.5934 2.32666C13.1334 1.48 14.5134 2.86666 13.6734 5.40666L11.7867 11.0667C10.52 14.8733 8.44004 14.8733 7.17337 11.0667L6.61337 9.38666L4.93337 8.82666C1.1267 7.56 1.1267 5.48666 4.93337 4.21333Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" stroke-linejoin="round"/>
                   <path d="M6.73999 9.1L9.12666 6.70667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -66,7 +66,7 @@ const WalletDetail = () => {
               </button>
             </div>
             <div className="col-span-1">
-              <button className="border w-full hover:shadow-lg py-3 hover:bg-[#017189] text-[#017189] flex items-center justify-center hover:text-white border-[#017189] rounded-2xl">
+              <button className="border w-full text-sm md:text-base hover:shadow-lg py-3 hover:bg-[#017189] text-[#017189] flex items-center justify-center hover:text-white border-[#017189] rounded-2xl">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="mr-2" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.33325 11.6667L12.6666 2.33333" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M3.33325 4.81999V11.6667H10.1799" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
@@ -77,7 +77,7 @@ const WalletDetail = () => {
               </button>
             </div>
             <div className="col-span-1">
-              <button className="border w-full hover:shadow-lg hover:bg-[#017189] text-[#017189] focus:bg-[#017189] text-[#017189] flex items-center justify-center hover:text-white  focus:text-white py-3 border-[#017189] rounded-2xl">
+              <button className="border w-full text-sm md:text-base hover:shadow-lg hover:bg-[#017189] text-[#017189] focus:bg-[#017189] text-[#017189] flex items-center justify-center hover:text-white  focus:text-white py-3 border-[#017189] rounded-2xl">
                 <svg width="16" height="16" viewBox="0 0 16 16" className="mr-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.52 6.96667L14 4.48665L11.52 2.00667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M2 4.48665H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -182,7 +182,7 @@ const WalletDetail = () => {
         </div>
 
         <div>
-          <div className="w-2/3 my-4">
+          <div className="md:w-2/3 my-4">
             <div className="grid grid-cols-3">
               <div
                 className="text-center hover:border-b-4 focus:border-b-4 my-2 pb-1.5 hover:border-[#017189] focus:border-[#017189]">

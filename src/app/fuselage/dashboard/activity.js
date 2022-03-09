@@ -4,7 +4,7 @@ const Activity = () => {
       <div className="">
 
         <div>
-          <div className="flex items-center justify-between">
+          <div className="md:flex items-center justify-between">
             <div>
               <label className="flex items-center " htmlFor="activity">
                 <p className="font-bold text-[21px] mr-4">Activity</p>
@@ -19,8 +19,8 @@ const Activity = () => {
           </div>
         </div>
 
-        <div>
-          <div className="flex justify-end">
+        <div className="overflow-auto">
+          <div className="flex w-full my-4 md:justify-end">
             <div className="mr-8">
               <div className="flex items-center">
                 <div className="mr-4">
@@ -40,7 +40,7 @@ const Activity = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm text-[#2B4146]">Total Transactions</p>
+                  <p className="text-sm text-[#2B4146] whitespace-nowrap">Total Transactions</p>
                   <p className="font-bold">$88,600.00</p>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
+import Search from "../components/search";
 
 const Sidebar = () => {
 
@@ -6,16 +7,17 @@ const Sidebar = () => {
   // useEffect(() => {}, [pathname]);
   return (
     <aside className="bg-[#017189] h-full">
-      <div className="mx-6">
+      <div className="mx-6 pt-24 md:pt-0">
         {/*logo*/}
-        <div>
+        <div className="hidden md:block">
           <div className="flex items-center justify-center py-8">
             <a><img height="42px" width="188px" src="https://i.ibb.co/5LYptZ7/logo.png" /></a>
           </div>
         </div>
 
+
         {/*pay*/}
-        <div>
+        <div className="hidden md:block">
           <div className="rounded-lg text-white bg-[#2B899D]   py-2 px-4">
             <div className="divide-y divide-[#EAFBFF]">
               <div className="flex items-center p-2">
@@ -86,8 +88,13 @@ const Sidebar = () => {
           </div>
         </div>
 
+        <div className="md:hidden w-full">
+          <Search/>
+        </div>
 
-      {/*  navlinks*/}
+
+
+        {/*  navlinks*/}
         <div>
           <ul className="mt-8">
             <li>
