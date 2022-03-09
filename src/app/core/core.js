@@ -7,15 +7,15 @@ import Wallet from "../fuselage/wallet/wallet";
 const Core = () => {
   return (
     <div className="h-full">
-      <div className="grid h-full bg-white grid-cols-5 overflow-hidden">
-        <div className="col-span-1 ">
+      <div className="md:grid h-full md:grid-cols-5 overflow-hidden">
+        <div className="col-span-1 hidden md:block ">
           <Sidebar/>
         </div>
-        <div className="col-span-4 overflow-auto">
-          <div className="sticky top-0">
+        <div className="col-span-4 bg-[#E5E5E5] overflow-auto">
+          <div className="sticky top-0 bg-[#FCFDFE]">
             <Nav/>
           </div>
-          <div className="h-full overflow-auto px-8">
+          <div className="h-full px-8">
             <Routes>
               <Route path="/" element={<Dashboard/>}/>
               <Route path="/dashboard" element={<Dashboard/>}/>

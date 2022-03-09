@@ -2,18 +2,18 @@ import Activity from "./activity";
 
 const Dashboard = () => {
   return (
-    <div className="px-4">
+    <div className="px-8 my-6 py-6 bg-white rounded-2xl">
 
       {/*dashboard data*/}
-      <div className="mt-8">
+      <div className="">
 
         <div className="">
-          <p className="font-bold text-[21px]">Wallet</p>
+          <p className="font-semibold text-[21px]">Wallet</p>
         </div>
 
         <div className="my-8">
           <div className="flex items-center">
-            <div className="mr-8 bg-[#FFF6E6] w-[332px] rounded-2xl p-6">
+            <div className="mr-8 bg-[#FFF6E6] shadow-sm border border-slate-100 w-[332px] rounded-2xl p-6">
               <div className="flex justify-between">
                 <div><p>Personal Account</p>
                   <p className="text-sm">USD</p></div>
@@ -30,8 +30,8 @@ const Dashboard = () => {
               <button className="rounded-full w-14 h-14 border border-[#017189] hover:bg-[#edf7f7] hover:text-white
                flex items-center justify-center">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 16H24" stroke="#017189" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M16 24V8" stroke="#017189" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 16H24" stroke="#017189" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 24V8" stroke="#017189" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
             </div>
@@ -39,7 +39,7 @@ const Dashboard = () => {
         </div>
 
         <div className="my-8">
-          <p className="font-bold text-[21px]">Wallet</p>
+          <p className="font-semibold text-[21px]">Quick Links</p>
           <p className="text-slate-400"> Your frequently used actions for easy access</p>
         </div>
 

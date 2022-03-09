@@ -6,7 +6,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    fontfamily: ['"Nunito Sans"', 'sans-serif']
+    // colors: {'button-active': '#017189',},
+    fontfamily:
+      { sans: ['"Nunito Sans"', 'sans-serif']}
   },
   plugins: [],
 }
