@@ -38,7 +38,7 @@ const MobileNav = () => {
 
               <div
                 id="userDropDown"
-                className="absolute   origin-top-right  mt-6 ring-1 ring-black ring-opacity-5 focus:outline-none right-0 z-10 shadow-md w-72 bg-white rounded-lg"
+                className="absolute hidden  origin-top-right  mt-6 ring-1 ring-black ring-opacity-5 focus:outline-none right-0 z-10 shadow-md w-72 bg-white rounded-lg"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"

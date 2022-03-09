@@ -39,7 +39,7 @@ const WalletCard = () => {
         <div>
           <ul>
             <li className="my-4">
-              <div className="flex items-center py-2">
+              <div className="flex items-center py-3 hover:bg-[#EEF7F9]  focus:bg-[#EEF7F9] rounded-md px-4">
                 <div className="mr-4">
                   <img width="52" height="52" className="rounded-full" src="https://i.ibb.co/XYXDcWn/flags.png"/>
                 </div>
@@ -54,7 +54,7 @@ const WalletCard = () => {
               </div>
             </li>
             <li className="my-4">
-              <div className="flex items-center py-2">
+              <div className="flex items-center py-3 hover:bg-[#EEF7F9]  focus:bg-[#EEF7F9] rounded-md px-4">
                 <div className="mr-4">
                   <img width="52" height="52" className="rounded-full" src="https://i.ibb.co/hD4WtCM/Mask-Group.png"/>
                 </div>
@@ -70,9 +70,9 @@ const WalletCard = () => {
             </li>
 
             <li className="my-4">
-              <div className="flex items-center py-2">
+              <div className="flex items-center py-2 hover:bg-[#EEF7F9]  focus:bg-[#EEF7F9] rounded-md px-4">
                 <div className="mr-4">
-                  <img width="52" height="52" className="rounded-full" src="https://i.ibb.co/hD4WtCM/Mask-Group.png"/>
+                  <img width="52" height="52" className="rounded-full" src="https://i.ibb.co/KK4Rb5y/flags-1.png"/>
                 </div>
                 <div className="mr-auto">
                   <p className="text-[#001B21]">School Savings</p>
