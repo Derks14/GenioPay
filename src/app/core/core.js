@@ -33,6 +33,7 @@ const Core = () => {
               <Route path="/" element={<Dashboard/>}/>
               <Route path="/dashboard" element={<Dashboard/>}/>
               <Route path="/wallet" element={<Wallet/>}/>
+              <Route path="*" element={<Dashboard />} />
             </Routes>
           </div>
         </div>
