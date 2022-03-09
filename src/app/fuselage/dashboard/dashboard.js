@@ -53,7 +53,7 @@ const Dashboard = () => {
                   <path d="M21.6467 18.3667H20.6933C19.4267 18.3667 18.36 17.4133 18.2533 16.2C18.1933 15.5067 18.4467 14.8133 18.9533 14.32C19.38 13.88 19.9733 13.6333 20.6133 13.6333H21.6467C21.84 13.6333 22 13.4733 21.98 13.28C21.8333 11.66 20.76 10.5533 19.1667 10.3667C19.0067 10.34 18.84 10.3333 18.6667 10.3333H12.6667C12.48 10.3333 12.3 10.3467 12.1267 10.3733C10.4267 10.5867 9.33334 11.8533 9.33334 13.6667V18.3333C9.33334 20.1733 10.8267 21.6667 12.6667 21.6667H18.6667C20.5333 21.6667 21.82 20.5 21.98 18.72C22 18.5267 21.84 18.3667 21.6467 18.3667ZM16.6667 14.5H12.6667C12.3933 14.5 12.1667 14.2733 12.1667 14C12.1667 13.7267 12.3933 13.5 12.6667 13.5H16.6667C16.94 13.5 17.1667 13.7267 17.1667 14C17.1667 14.2733 16.94 14.5 16.6667 14.5Z" fill="white"/>
                 </svg>
               </div>
-              <div className="flex items-center justify-center px-4 pt-3 "><p className="text-center	text-sm">Add new Wallet</p></div>
+              <div className="flex items-center justify-center px-4 pt-3 "><p className="text-center	text-sm">Add new<br/> Wallet</p></div>
 
             </div>
 
@@ -66,7 +66,7 @@ const Dashboard = () => {
                 </svg>
 
               </div>
-              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Add new Card</p></div>
+              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Add new <br/> Card</p></div>
 
             </div>
 
@@ -81,7 +81,7 @@ const Dashboard = () => {
                 </svg>
 
               </div>
-              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Balance Exchange</p></div>
+              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Balance <br/> Exchange</p></div>
 
             </div>
             <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
@@ -92,7 +92,7 @@ const Dashboard = () => {
                 </svg>
 
               </div>
-              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Transfer to Account</p></div>
+              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Transfer to <br/> Account</p></div>
 
             </div>
             <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] border-[#F1F5F9] ">
@@ -104,7 +104,7 @@ const Dashboard = () => {
 
 
               </div>
-              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Generate Voucher</p></div>
+              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Generate <br/>Voucher</p></div>
 
             </div>
 
@@ -116,7 +116,7 @@ const Dashboard = () => {
                 </svg>
 
               </div>
-              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Mobile Money</p></div>
+              <div className="flex items-center justify-center px-5 pt-3 "><p className="text-center	text-sm">Mobile <br/> Money</p></div>
 
             </div>
             <div className="min-w-[120px] mr-3 md:mr-6 py-8 border hover:border-[#017189] rounded-lg hover:bg-[#edf7f7] hover:shadow-md border-[#F1F5F9] ">

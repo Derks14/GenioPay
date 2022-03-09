@@ -1,4 +1,56 @@
+import ApexCharts from 'apexcharts'
+import { useEffect } from "react";
+
 const Activity = () => {
+  useEffect(() => {
+    setChart();
+  });
+
+  const setChart = () => {
+    const options = {
+      chart: {
+        type: 'area',
+        height: 350,
+        toolbar: {
+          show: false
+        }
+      },
+      series: [{
+        name: 'sales',
+        data: [ 4, 3, 3.5, 3, 2.5, 3.5, 3]
+      }],
+      colors: ['#017189'],
+      grid: {
+        xaxis: {
+          lines: {
+            show: true,
+          }
+        },
+        yaxis: {
+          lines: {
+            show: false
+          }
+        },       },
+      fill: {
+        type: "gradient",
+        gradient: {
+          shadeIntensity: 1,
+          opacityFrom: 0.7,
+          opacityTo: 0.9,
+          stops: [0, 90, 100]
+        }
+      },
+      xaxis: {
+        lines: {
+          show: false
+        },
+        categories: ['Jan','Feb','Mar', 'Apr', 'May', 'Jun', 'Jul']
+      }
+    }
+
+    const chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  };
   return (
     <div>
       <div className="">
@@ -19,7 +71,7 @@ const Activity = () => {
           </div>
         </div>
 
-        <div className="overflow-auto">
+        <div className="">
           <div className="flex w-full my-4 md:justify-end">
             <div className="mr-8">
               <div className="flex items-center">
@@ -81,6 +133,12 @@ const Activity = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="overflow-hidden ">
+          <div id="chart" className="  ">
+
           </div>
         </div>
 

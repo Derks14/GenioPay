@@ -1,5 +1,6 @@
 import WalletCard from "./walletCard";
 import WalletDetail from "./walletDetail";
+import { Route, Routes } from "react-router-dom";
 
 const Wallet = () => {
   return (
@@ -31,7 +32,7 @@ const Wallet = () => {
 
 
               <div className="col-span-3">
-                <WalletDetail/>
+                 <WalletDetail/>
               </div>
             </div>
           </div>
