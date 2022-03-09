@@ -24,7 +24,7 @@ const Core = () => {
           </div>
 
           {/*pc navbar*/}
-          <div className="hidden md:block sticky top-0 bg-[#FCFDFE]">
+          <div className="hidden md:block z-10 sticky top-0 bg-[#FCFDFE]">
             <Nav/>
           </div>
 
