@@ -1,13 +1,17 @@
 import { useState } from "react";
 import Search from "../components/search";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
-  const [name, setName] = useState('Huss Smith')
+  const [text, setText] = useState('Welcome, Paul Pogba')
+
+  const { pathname } = useLocation();
+
   return (
     <nav className="px-8">
       <div className="flex items-center py-4">
         <div className="mr-auto">
-          <p className="text-3xl font-bold">Welcome, {name}</p>
+          <p className="text-3xl font-bold">  {pathname.includes("/wallet") ? "Wallet": "Welcome, Paul Pogba"}</p>
         </div>
 
         <Search/>
