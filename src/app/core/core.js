@@ -19,7 +19,7 @@ const Core = () => {
             <MobileNav/>
           </div>
 
-          <div id="mobileSideBar" className="md:hidden transition-all duration-700 ease-in-out fixed w-10/12 z-10 -translate-x-full top-0 h-screen overflow-hidden">
+          <div id="mobileSideBar" className="md:hidden transition-all duration-700 ease-in-out fixed w-10/12 z-10 -translate-x-full top-0   overflow-hidden">
             <Sidebar/>
           </div>
 

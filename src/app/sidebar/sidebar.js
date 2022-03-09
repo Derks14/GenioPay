@@ -6,7 +6,7 @@ const Sidebar = () => {
   const { pathname } = useLocation();
   // useEffect(() => {}, [pathname]);
   return (
-    <aside className="bg-[#017189] h-full">
+    <aside className="bg-[#017189] h-screen md:h-full">
       <div className="mx-6 pt-24 md:pt-0">
         {/*logo*/}
         <div className="hidden md:block">

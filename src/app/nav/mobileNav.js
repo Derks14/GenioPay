@@ -2,6 +2,8 @@ const MobileNav = () => {
   const toggleNav = () => {
     const sidebar = document.getElementById('mobileSideBar');
     sidebar.classList.toggle('-translate-x-full');
+    document.body.classList.toggle('overflow-hidden');
+
   };
 
   const toggleUserDropdown = () => {

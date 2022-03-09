@@ -7,7 +7,7 @@ const WalletDetail = () => {
         <div>
           <div className="rounded-2xl border border-gray-100 p-8 shadow-sm">
             <div className="md:flex justify-between items-center">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between md:block">
                 <p className="text-green-500 text-xs flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Active</p>
                 <p className="text-[#001B21]">EUR Wallet</p>
