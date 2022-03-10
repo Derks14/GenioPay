@@ -4,11 +4,17 @@ import Search from "../components/search";
 const Sidebar = () => {
 
   const { pathname } = useLocation();
-  console.log(pathname);
+
+  const toggleNav = () => {
+    const sidebar = document.getElementById('mobileSideBar');
+    sidebar.classList.toggle('-translate-x-full');
+    document.body.classList.toggle('overflow-hidden');
+
+  };
   // useEffect(() => {}, [pathname]);
   return (
     <aside className="bg-[#017189] h-screen md:h-full">
-      <div className="mx-6 pt-24 md:pt-0">
+      <div className="mx-6 pt-4 md:pt-0">
         {/*logo*/}
         <div className="hidden md:block">
           <div className="flex items-center justify-center py-8">
@@ -89,8 +95,20 @@ const Sidebar = () => {
           </div>
         </div>
 
+        {/*Search bar*/}
         <div className="md:hidden w-full">
-          <Search/>
+          <div className="flex items-center justify-between">
+            <Search />
+            <div>
+              <button onClick={() => toggleNav()} className="text-white p-1.5 hover:bg-[#2B899D] bg-[#2B899D] focus:bg-[#2B899D] rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
         </div>
 
 

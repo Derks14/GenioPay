@@ -15,11 +15,11 @@ const Core = () => {
         <div className="col-span-4 bg-[#E5E5E5] md:overflow-auto">
 
           {/*mobile navbar*/}
-          <div className="sticky md:hidden w-full z-50 shadow-lg top-0">
+          <div className="sticky md:hidden w-full shadow-lg top-0">
             <MobileNav/>
           </div>
 
-          <div id="mobileSideBar" className="md:hidden transition-all duration-700 ease-in-out fixed w-10/12 z-10 -translate-x-full top-0   overflow-hidden">
+          <div id="mobileSideBar" className="md:hidden transition-all duration-700 ease-in-out fixed  z-10 -translate-x-full top-0   overflow-hidden">
             <Sidebar/>
           </div>
 

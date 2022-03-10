@@ -1,4 +1,5 @@
 const MobileNav = () => {
+
   const toggleNav = () => {
     const sidebar = document.getElementById('mobileSideBar');
     sidebar.classList.toggle('-translate-x-full');
